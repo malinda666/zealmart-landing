@@ -34,7 +34,7 @@ const menuItems = [
 
 const Header = () => {
   return (
-    <header className="relative w-full md:px-4 lg:px-8 py-2 md:py-4 bg-foreground">
+    <header className="sticky z-50 w-full md:px-4 lg:px-8 py-2 md:py-4 bg-foreground">
       <div className="container mx-auto flex items-center justify-between">
         <div className="relative flex items-center md:min-w-max lg:min-w-[210px]">
           <div className="relative w-[36px] md:w-[48px] min-w-max min-h-[63px] h-full mr-2">
@@ -60,7 +60,7 @@ const Header = () => {
         </div>
         <div className="flex md:hidden">
           <Sheet>
-            <SheetTrigger>
+            <SheetTrigger asChild>
               <Button size="icon" variant="ghost">
                 <Menu />
               </Button>
@@ -77,7 +77,7 @@ const Header = () => {
                     </span>
                   </div>
                 </SheetTitle>
-                <SheetDescription>
+                <SheetDescription asChild>
                   <div className="flex flex-col items-center justify-center gap-4">
                     {menuItems.map((item) => (
                       <Link href={item.path} key={item.name} className="">
@@ -86,10 +86,10 @@ const Header = () => {
                         </span>
                       </Link>
                     ))}
-                  </div>
-                  <div className="flex items-center justify-center gap-4 mt-8">
-                    <Button variant="secondary">Log In</Button>
-                    <Button>Try Zealmart</Button>
+                    <div className="flex items-center justify-center gap-4 mt-8">
+                      <Button variant="secondary">Log In</Button>
+                      <Button>Try Zealmart</Button>
+                    </div>
                   </div>
                 </SheetDescription>
               </SheetHeader>
