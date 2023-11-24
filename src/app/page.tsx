@@ -104,7 +104,7 @@ export default function Home() {
           {featuresTiles.map((tile) => (
             <div
               className="relative flex flex-col items-center rounded-[40px] mb-4 md:mb-0 justify-center h-[40vw] md:h-[200px] drop-shadow-custom aspect-square bg-gradient-to-br from-background via-foreground to-foreground"
-              key={tile.title1}
+              key={tile.src}
             >
               <div className="relative min-h-[60px] aspect-square mb-6">
                 <Image src={tile.src} fill alt={tile.title1} />
@@ -115,6 +115,85 @@ export default function Home() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="">
+        <div className="relative p-10 rounded-[40px] bg-foreground grid grid-cols-1 md:grid-cols-2 max-w-screen-lg mx-auto bg-radial-gradient">
+          <div className="flex flex-col items-start justify-center gap-6 col-span-1 ">
+            <h2 className="text-3xl font-semibold text-center md:text-start">
+              Manage Employees <br />
+              <span className="text-primary">Easily</span>
+            </h2>
+            <p className="text-border text-sm max-w-sm text-center md:text-start mb-6 md:mb-0">
+              With Zeal Mart, you have the power to efficiently manage your
+              workforce. You can effortlessly control and customize permissions
+              for your employees, allowing you to assign access levels based on
+              their roles and responsibilities. This means you can ensure that
+              your team members have the right level of access to perform their
+              tasks effectively while maintaining the security and
+              confidentiality of sensitive business data. Managing your
+              employees and their permissions has never been easier, giving you
+              the control you need to optimize your operations.
+            </p>
+          </div>
+          <div className="col-span-1 relative w-full h-full ">
+            <div className="aspect-[6/4]">
+              <Image
+                src="/assets/svg/manage-employees.svg"
+                fill
+                alt="features"
+              />
+            </div>
+          </div>
+          <div className="absolute left-[-45px] bottom-8 w-full aspect-[6/4] max-w-[90px]">
+            <Image src="/assets/svg/triangle-deco.svg" fill alt="features" />
+          </div>
+          <div className="absolute z-[-1] left-[-45px] bottom-8 w-full aspect-[6/4] max-w-[90px]">
+            <Image src="/assets/svg/triangle-deco-2.svg" fill alt="features" />
+          </div>
+          <div className="absolute right-[-45px] top-8 w-full aspect-[6/4] max-w-[90px]">
+            <Image src="/assets/svg/triangle-deco.svg" fill alt="features" />
+          </div>
+          <div className="absolute z-[-1] right-[-45px] top-8 w-full aspect-[6/4] max-w-[90px]">
+            <Image src="/assets/svg/triangle-deco-2.svg" fill alt="features" />
+          </div>
+        </div>
+        <div className="relative p-10 rounded-[40px] bg-foreground grid grid-cols-1 md:grid-cols-2 max-w-screen-lg mx-auto bg-radial-gradient mt-16">
+          <div className="col-span-1 relative w-full h-full ">
+            <div className="aspect-[6/4]">
+              <Image src="/assets/svg/stay-connected.svg" fill alt="features" />
+            </div>
+          </div>
+          <div className="flex flex-col items-start justify-center gap-6 pl-6 col-span-1 ">
+            <h2 className="text-3xl font-semibold text-center md:text-start">
+              Stay connected to our <br />
+              <span className="text-primary">Stock</span>
+            </h2>
+            <p className="text-border text-sm max-w-sm text-center md:text-start mb-6 md:mb-0">
+              {`Our system empowers you to stay closely connected to your
+              inventory like never before. With real-time tracking, detailed
+              insights, and comprehensive reporting, you'll always have your
+              finger on the pulse of your stock levels. Whether you're at the
+              office, on the go, or managing multiple locations, our solution
+              keeps you in touch with your inventory, ensuring you're
+              well-prepared to make informed decisions and stay ahead of your
+              inventory management needs. Don't let stockouts or overstocking
+              surprise you – stay connected and in control with our system.`}
+            </p>
+          </div>
+          <div className="absolute right-[-60px] bottom-8 w-full aspect-[6/4] max-w-[120px]">
+            <Image src="/assets/svg/circle-deco.svg" fill alt="features" />
+          </div>
+          <div className="absolute z-[-1] right-[-60px] bottom-8 w-full aspect-[6/4] max-w-[120px]">
+            <Image src="/assets/svg/circle-deco-2.svg" fill alt="features" />
+          </div>
+          <div className="absolute left-[-60px] top-8 w-full aspect-[6/4] max-w-[120px]">
+            <Image src="/assets/svg/circle-deco.svg" fill alt="features" />
+          </div>
+          <div className="absolute z-[-1] left-[-60px] top-8 w-full aspect-[6/4] max-w-[120px]">
+            <Image src="/assets/svg/circle-deco-2.svg" fill alt="features" />
+          </div>
         </div>
       </section>
     </>
