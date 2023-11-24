@@ -60,13 +60,15 @@ const config: Config = {
         sans: ['var(--font-sans)', ...fontFamily.sans],
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'radial-gradient':
+          'radial-gradient(169.40% 99.55% at 65.76% 30.29%, rgba(255, 255, 255, 0.00) 0%, var(--foreground) 100%)',
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+      },
+      dropShadow: {
+        custom: '6px 9px 13px var(--foreground)',
       },
     },
   },
