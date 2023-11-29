@@ -1,4 +1,6 @@
+import TestimonialSlider from '@/components/modules/TestimonialSlider'
 import { Button } from '@/components/ui/Button'
+import { testimonialSliderData } from '@/mock-data/testimonialSliderData'
 import Image from 'next/image'
 
 const featuresTiles = [
@@ -195,6 +197,12 @@ export default function Home() {
             <Image src="/assets/svg/circle-deco-2.svg" fill alt="features" />
           </div>
         </div>
+      </section>
+      <section>
+        <TestimonialSlider
+          title={['Voices of', 'Satisfaction']}
+          items={testimonialSliderData}
+        />
       </section>
     </>
   )
