@@ -1,6 +1,7 @@
 'use client'
 
 import { Button } from '@/components/ui/Button'
+import Title from '@/components/ui/Title'
 import { cn } from '@/lib/utils'
 import { Testimonial } from '@/models'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
@@ -57,14 +58,12 @@ const TestimonialSlider = ({
   return (
     <div
       className={cn(
-        'w-full max-w-screen-lg overflow-hidden relative flex flex-col items-start justify-start mx-auto mt-16',
+        'w-full overflow-hidden relative flex flex-col items-start justify-start mt-16',
         className
       )}
     >
       <div className="w-full flex items-center justify-between relative">
-        <h2 className="text-3xl font-semibold text-center md:text-start">
-          {title[0]} <span className="text-primary">{title[1]}</span>
-        </h2>
+        <Title title={title} />
         <div className="hidden md:flex items-center justify-end gap-2">
           <Button size="icon" variant="dark" onClick={() => moveSlide(-1)}>
             <ChevronLeft />
