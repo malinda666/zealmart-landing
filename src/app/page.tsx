@@ -122,7 +122,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="">
+      <section className="container mx-auto">
         <div className="relative p-10 rounded-[40px] bg-foreground grid grid-cols-1 md:grid-cols-2 max-w-screen-lg mx-auto bg-radial-gradient">
           <div className="flex flex-col items-start justify-center gap-6 col-span-1 ">
             <h2 className="text-3xl font-semibold text-center md:text-start">
@@ -200,13 +200,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="min-h-max max-w-screen-lg mx-auto">
+      <section className="min-h-max max-w-screen-lg mx-auto container">
         <TestimonialSlider
           title={['Voices of', 'Satisfaction']}
           items={testimonialSliderData}
         />
       </section>
-      <section className="!min-h-max max-w-screen-lg mx-auto">
+      <section className="!min-h-max max-w-screen-lg mx-auto container">
         <FAQAccordion title={['Have Questions?', 'We have answers']} />
         <div className="text-sm mt-6 flex flex-col items-start">
           <span className="">{`Couldn't Find What you Looking For?`}</span>
@@ -218,7 +218,7 @@ export default function Home() {
           </span>
         </div>
       </section>
-      <section className="!min-h-max max-w-screen-lg mx-auto">
+      <section className="!min-h-max max-w-screen-lg mx-auto container">
         <div className="bg-foreground rounded-3xl py-6 px-10 my-8">
           <h1 className="mt-4 md:mt-16 text-3xl md:text-5xl font-bold text-center">
             Need a Custom Plan That Suits Your Business?
