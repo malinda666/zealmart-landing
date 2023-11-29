@@ -116,7 +116,7 @@ const TestimonialSlider = ({
             </div>
           ))}
         </div>
-        <div className="absolute right-0 top-16 h-full w-[25%] bg-gradient-to-l from-background via-transparent to-transparent" />
+        <div className="absolute -right-2 top-16 h-full w-[25%] bg-gradient-to-l from-background via-transparent to-transparent" />
       </div>
     </div>
   )
