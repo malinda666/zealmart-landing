@@ -35,7 +35,7 @@ const menuItems = [
 const Header = () => {
   return (
     <header className="sticky z-50 w-full md:px-4 lg:px-8 py-2 md:py-4 bg-foreground">
-      <div className="container mx-auto flex items-center justify-between">
+      <div className="max-w-screen-lg mx-auto flex items-center justify-between">
         <div className="relative flex items-center md:min-w-max lg:min-w-[210px]">
           <div className="relative w-[36px] md:w-[48px] min-w-max min-h-[63px] h-full mr-2">
             <Image src="/assets/zealmart-logo.svg" alt="Logo" fill />

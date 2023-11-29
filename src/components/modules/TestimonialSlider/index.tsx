@@ -78,7 +78,7 @@ const TestimonialSlider = ({
         ref={sliderWrapper}
       >
         <div
-          className="w-full flex items-start gap-8 mr-4 will-change-transform transition-transform duration-300 ease-in-out"
+          className="w-full flex items-start gap-8 pr-4 will-change-transform transition-transform duration-300 ease-in-out"
           ref={sliderInner}
         >
           {items.map((item, i) => (
@@ -116,6 +116,7 @@ const TestimonialSlider = ({
             </div>
           ))}
         </div>
+        <div className="absolute right-0 top-16 h-full w-[25%] bg-gradient-to-l from-background via-transparent to-transparent" />
       </div>
     </div>
   )

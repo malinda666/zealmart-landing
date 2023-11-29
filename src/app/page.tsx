@@ -33,7 +33,7 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section className="relative w-full mx-auto min-h-[calc(75vh-79px)] md:min-h-[calc(100vh-95px)]">
-        <div className="flex container mx-auto flex-col items-center justify-center md:px-8">
+        <div className="flex max-w-screen-lg mx-auto flex-col items-center justify-center md:px-8">
           <div className="relative w-[120px] min-h-[24px] h-max mt-12">
             <Image src="/assets/svg/hero.svg" fill alt="HeroShape" />
           </div>
