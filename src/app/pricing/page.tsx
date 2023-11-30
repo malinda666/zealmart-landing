@@ -30,7 +30,7 @@ export default function Pricing() {
         </div>
       </section>
       <section className="!min-h-max">
-        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-3">
+        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-3">
           {pricingData.map((pricing, i) => {
             const isRecommended = pricing.isRecommended
 
