@@ -9,8 +9,8 @@ const Footer = () => {
   return (
     <footer className="w-full bg-foreground">
       <div className="relative py-6">
-        <div className="max-w-screen-lg container mx-auto py-8 flex items-center justify-between">
-          <h3 className="text-3xl font-semibold">
+        <div className="max-w-screen-lg container mx-auto py-8 flex flex-col md:flex-row items-start justify-center md:items-center md:justify-between">
+          <h3 className="text-3xl font-semibold mb-2 md:mb-0">
             Ready to Transform Your Business? <br />
             Take the First Step Today!
           </h3>
@@ -36,24 +36,29 @@ const Footer = () => {
         <Separator />
         <div className="max-w-screen-lg container mx-auto py-8 flex flex-col items-start justify-between">
           {footerLinks.map((item, i) => (
-            <div className="flex gap-8 items-center justify-start" key={i}>
-              <h4 className="text-lg font-semibold min-w-[100px]">
+            <div
+              className="flex flex-col md:flex-row w-full md:w-max gap-2 md:gap-8 items-center justify-start"
+              key={i}
+            >
+              <h4 className="text-lg font-semibold text-center md:text-start w-full md:min-w-[100px]">
                 {item.title}
               </h4>
-              {item.links.map((link, j) => (
-                <Link
-                  href={link.path}
-                  key={j}
-                  className="text-sm text-border hover:text-primary transition-colors duration-150 ease-in-out"
-                >
-                  {link.name}
-                </Link>
-              ))}
+              <div className="flex flex-row gap-2">
+                {item.links.map((link, j) => (
+                  <Link
+                    href={link.path}
+                    key={j}
+                    className="text-sm text-border hover:text-primary transition-colors duration-150 ease-in-out"
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </div>
             </div>
           ))}
         </div>
         <Separator />
-        <div className="max-w-screen-lg container mx-auto pt-4 flex items-center justify-between">
+        <div className="max-w-screen-lg container mx-auto pt-4 flex flex-col md:flex-row items-center justify-between">
           <div className="relative flex items-center md:min-w-max lg:min-w-[210px]">
             <div className="relative w-[36px] md:w-[48px] min-w-max min-h-[63px] h-full mr-2">
               <Image src="/assets/zealmart-logo.svg" alt="Logo" fill />
@@ -62,7 +67,7 @@ const Footer = () => {
               Zeal Mart
             </span>
           </div>
-          <div className="flex items-center justify-end gap-8 text-sm">
+          <div className="flex items-center justify-between md:justify-end gap-2 md:gap-8 text-sm">
             <a
               href="http://"
               target="_blank"

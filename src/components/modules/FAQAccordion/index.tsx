@@ -17,7 +17,7 @@ const FAQAccordion = ({ title }: FAQAccordionProps) => {
   return (
     <div className="w-full overflow-hidden relative flex flex-col items-start justify-start mt-16">
       <Title title={title} />
-      <div className="mt-8 grid grid-cols-6 w-full">
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-6 w-full">
         <Accordion type="single" collapsible className="w-full col-span-4">
           {faqAccordionData.map((item, i) => (
             <AccordionItem

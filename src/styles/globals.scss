@@ -11,5 +11,6 @@ body {
 
   section {
     min-height: 100vh;
+    @apply relative mx-auto container max-w-screen-lg;
   }
 }

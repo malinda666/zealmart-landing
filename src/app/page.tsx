@@ -32,15 +32,15 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative w-full mx-auto min-h-[calc(75vh-79px)] md:min-h-[calc(100vh-95px)]">
+      <div className="relative w-full mx-auto min-h-[calc(75vh-79px)] md:min-h-[calc(100vh-95px)]">
         <div className="flex max-w-screen-lg mx-auto flex-col items-center justify-center md:px-8">
           <div className="relative w-[120px] min-h-[24px] h-max mt-12">
             <Image src="/assets/svg/hero.svg" fill alt="HeroShape" />
           </div>
-          <h1 className="mt-4 md:mt-16 text-3xl md:text-6xl font-bold text-center">
+          <h1 className="mt-4 md:mt-12 text-3xl md:text-5xl font-bold text-center">
             Simplify, Secure and Scale Your Business Operations with Confidence
           </h1>
-          <p className="mt-3 md:mt-6 text-sm md:text-lg text-center text-border">
+          <p className="mt-3 md:mt-6 text-sm text-center text-border">
             Discover a modern, comprehensive approach to business management.
             Our system provides a suite of powerful tools designed to simplify
             your operations, enhance security, and pave the way for scalable
@@ -76,10 +76,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Features Section */}
-      <section className="container mx-auto pt-16">
+      <section className="pt-16">
         <div className="p-10 rounded-[40px] bg-foreground grid grid-cols-1 md:grid-cols-2 max-w-screen-lg mx-auto bg-radial-gradient">
           <div className="flex flex-col items-start justify-center gap-6 col-span-1 ">
             <h2 className="text-3xl font-semibold text-center md:text-start">
@@ -122,7 +122,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container mx-auto">
+      <section>
         <div className="relative p-10 rounded-[40px] bg-foreground grid grid-cols-1 md:grid-cols-2 max-w-screen-lg mx-auto bg-radial-gradient">
           <div className="flex flex-col items-start justify-center gap-6 col-span-1 ">
             <h2 className="text-3xl font-semibold text-center md:text-start">
@@ -200,15 +200,15 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="min-h-max max-w-screen-lg mx-auto container">
+      <section className="min-h-max">
         <TestimonialSlider
           title={['Voices of', 'Satisfaction']}
           items={testimonialSliderData}
         />
       </section>
-      <section className="!min-h-max max-w-screen-lg mx-auto container">
+      <section className="!min-h-max">
         <FAQAccordion title={['Have Questions?', 'We have answers']} />
-        <div className="text-sm mt-6 flex flex-col items-start">
+        <div className="text-sm mt-6 flex flex-col items-center md:items-start">
           <span className="">{`Couldn't Find What you Looking For?`}</span>
           <span>
             Write to us{' '}
@@ -218,7 +218,7 @@ export default function Home() {
           </span>
         </div>
       </section>
-      <section className="!min-h-max max-w-screen-lg mx-auto container">
+      <section className="!min-h-max">
         <div className="bg-foreground rounded-3xl py-6 px-10 my-8">
           <h1 className="mt-4 md:mt-16 text-3xl md:text-5xl font-bold text-center">
             Need a Custom Plan That Suits Your Business?
@@ -233,7 +233,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   )
 }
