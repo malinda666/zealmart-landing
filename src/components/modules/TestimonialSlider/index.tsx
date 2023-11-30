@@ -25,17 +25,6 @@ const TestimonialSlider = ({
 
   //   const [disabledButton, setDisabledButton] = useState("")
 
-  useEffect(() => {
-    if (!sliderWrapper.current) {
-      return
-    }
-
-    const sliderItems = sliderWrapper.current.querySelectorAll('#slide--item')
-    const sliderLength = sliderItems[0].getBoundingClientRect().width + 16
-
-    console.log(sliderWrapper.current, sliderLength)
-  }, [])
-
   const moveSlide = (dir: number) => {
     if (!sliderWrapper.current || !sliderInner.current) {
       return
