@@ -27,32 +27,32 @@ export default function ContactUs() {
       </section>
       <div className="w-full bg-foreground mb-8">
         <section className="!min-h-max py-6 !px-0">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
-              <h4 className="text-3xl font-semibold">Find Us On</h4>
-              <div className="flex items-center gap-4">
-                <div className="relative w-[40px] aspect-square">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <div className="flex flex-col md:flex-row items-center gap-1 md:gap-4 mb-6 md:mb-0">
+              <h4 className="text-lg md:text-3xl font-semibold">Find Us On</h4>
+              <div className="flex items-center gap-2 md:gap-4">
+                <div className="relative w-[25px] md:w-[40px] aspect-square">
                   <Image
                     src="/assets/logos/logos_facebook.png"
                     alt="facebook"
                     fill
                   />
                 </div>
-                <div className="relative w-[40px] aspect-square">
+                <div className="relative w-[25px] md:w-[40px] aspect-square">
                   <Image
                     src="/assets/logos/logos_linkedin.png"
                     alt="facebook"
                     fill
                   />
                 </div>
-                <div className="relative w-[40px] aspect-square">
+                <div className="relative w-[25px] md:w-[40px] aspect-square">
                   <Image
                     src="/assets/logos/logos_instagram.png"
                     alt="facebook"
                     fill
                   />
                 </div>
-                <div className="relative w-[40px] aspect-square">
+                <div className="relative w-[25px] md:w-[40px] aspect-square">
                   <Image
                     src="/assets/logos/logos_twitter.png"
                     alt="facebook"
@@ -62,17 +62,20 @@ export default function ContactUs() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <h4 className="text-3xl font-semibold">Email</h4>
+              <h4 className="text-lg md:text-3xl font-semibold">Email</h4>
               <a
                 href="mailto:help@zealmart.com"
-                className="text-xl text-[#00E676]"
+                className="text-sm md:text-xl text-[#00E676]"
               >
                 help@zealmart.com
               </a>
             </div>
             <div className="flex items-center gap-4">
-              <h4 className="text-3xl font-semibold">Call Us</h4>
-              <a href="tel:+9402221442343" className="text-xl text-[#00E676]">
+              <h4 className="text-lg md:text-3xl font-semibold">Call Us</h4>
+              <a
+                href="tel:+9402221442343"
+                className="text-sm md:text-xl text-[#00E676]"
+              >
                 02221442343
               </a>
             </div>
