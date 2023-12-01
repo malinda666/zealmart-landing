@@ -7,7 +7,7 @@ import Image from 'next/image'
 export default function ContactUs() {
   return (
     <>
-      <section className="relative mx-auto container max-w-screen-lg grid grid-cols-1 md:grid-cols-2 px-0 !min-h-max mb-8">
+      <section className="relative mx-auto container max-w-screen-lg grid grid-cols-1 md:grid-cols-2 px-4 lg:px-0 !min-h-max mb-8">
         <div className="mt-8">
           <Title title={[`Let's Discuss Your`, 'Requirements']} size="big" />
           <div className="relative w-[90%] aspect-square">
@@ -27,7 +27,7 @@ export default function ContactUs() {
       </section>
       <div className="w-full bg-foreground mb-8">
         <section className="!min-h-max py-6 !px-0">
-          <div className="flex flex-col md:flex-row items-center justify-between">
+          <div className="flex flex-col md:flex-row items-center justify-between px-4 lg:px-0">
             <div className="flex flex-col md:flex-row items-center gap-1 md:gap-4 mb-6 md:mb-0">
               <h4 className="text-lg md:text-3xl font-semibold">Find Us On</h4>
               <div className="flex items-center gap-2 md:gap-4">

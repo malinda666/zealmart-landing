@@ -9,7 +9,7 @@ import Image from 'next/image'
 export default function Pricing() {
   return (
     <>
-      <section className="relative mx-auto container max-w-screen-lg grid grid-cols-1 md:grid-cols-7 px-0">
+      <section className="relative !min-h-max mx-auto container max-w-screen-lg grid grid-cols-1 md:grid-cols-7 px-4 lg:px-0">
         <div className="flex flex-col items-center md:items-start md:justify-center md:col-span-3 px-4 md:px-0">
           <h4 className="text-6xl font-semibold mb-8 text-center md:text-start">
             Pricing
@@ -21,7 +21,7 @@ export default function Pricing() {
             inventory management system without overcommitting.
           </p>
         </div>
-        <div className="relative flex md:col-span-4 aspect-[5/6]">
+        <div className="relative flex md:col-span-4 aspect-square">
           <Image
             src="/assets/svg/pricing-banner.svg"
             fill
@@ -37,7 +37,7 @@ export default function Pricing() {
             return (
               <div
                 className={cn(
-                  'relative rounded-3xl flex flex-col items-center',
+                  'relative rounded-3xl flex flex-col items-center pb-0 md:pb-8',
                   isRecommended && 'text-black'
                 )}
                 style={{

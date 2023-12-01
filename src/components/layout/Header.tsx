@@ -37,12 +37,15 @@ const Header = () => {
     <header className="sticky z-50 w-full px-4 lg:px-8 py-2 md:py-4 bg-foreground">
       <div className="max-w-screen-lg mx-auto flex items-center justify-between">
         <div className="relative flex items-center md:min-w-max lg:min-w-[210px]">
-          <div className="relative w-[36px] md:w-[48px] min-w-max min-h-[63px] h-full mr-2">
-            <Image src="/assets/zealmart-logo.svg" alt="Logo" fill />
-          </div>
-          <span className="font-bold md:text-lg whitespace-nowrap text-white tracking-normal">
-            Zeal Mart
-          </span>
+          <Link href="/">
+            <div className="relative w-[150px] aspect-[2764/916] h-full mr-2 mb-3 md:mb-0">
+              <Image
+                src="/assets/Zeal Mart Logo-Coloured.png"
+                alt="Logo"
+                fill
+              />
+            </div>
+          </Link>
         </div>
         <div className="hidden md:flex items-center justify-center gap-4">
           {menuItems.map((item) => (

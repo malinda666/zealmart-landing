@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-foreground">
+    <footer className="relative w-full bg-foreground mt-16">
       <div className="relative py-6">
         <div className="max-w-screen-lg container mx-auto py-8 flex flex-col md:flex-row items-start justify-center md:items-center md:justify-between">
           <h3 className="text-3xl font-semibold mb-2 md:mb-0">
@@ -60,12 +60,13 @@ const Footer = () => {
         <Separator />
         <div className="max-w-screen-lg container mx-auto pt-4 flex flex-col md:flex-row items-center justify-between">
           <div className="relative flex items-center md:min-w-max lg:min-w-[210px]">
-            <div className="relative w-[36px] md:w-[48px] min-w-max min-h-[63px] h-full mr-2">
-              <Image src="/assets/zealmart-logo.svg" alt="Logo" fill />
+            <div className="relative w-[150px] aspect-[2764/916] h-full mr-2 mb-3 md:mb-0">
+              <Image
+                src="/assets/Zeal Mart Logo-Coloured.png"
+                alt="Logo"
+                fill
+              />
             </div>
-            <span className="font-bold md:text-lg whitespace-nowrap text-white tracking-normal">
-              Zeal Mart
-            </span>
           </div>
           <div className="flex items-center justify-between md:justify-end gap-2 md:gap-8 text-sm">
             <a

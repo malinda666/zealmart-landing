@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative w-full mx-auto min-h-[calc(75vh-79px)] md:min-h-[calc(100vh-95px)]">
+      <div className="relative w-full mx-auto min-h-max xl:min-h-[calc(100vh-95px)] flex flex-col justify-between">
         <div className="flex max-w-screen-lg mx-auto flex-col items-center justify-center md:px-8">
           <div className="relative w-[120px] min-h-[24px] h-max mt-12">
             <Image src="/assets/svg/hero.svg" fill alt="HeroShape" />
@@ -52,29 +52,29 @@ export default function Home() {
             <Button>Try Zealmart Free</Button>
             <Button>Learn More</Button>
           </div>
-          <div className="absolute bottom-0 mt-3 md:mt-6 flex flex-col items-center w-full bg-foreground overflow-hidden">
-            <p className="text-sm md:text-lg font-semibold text-border pt-6">
-              Trusted by Leading Businesses Worldwide
-            </p>
-            <div className="mt-2 w-[115%] flex items-center justify-between">
-              {[1, 2, 3, 4, 5].map((item) => (
-                <div
-                  className="relative min-h-[75px] min-w-[60px] md:min-h-[150px] md:min-w-[200px] w-full"
-                  key={item}
-                >
-                  <Image
-                    src={'/assets/logos/' + item + '.png'}
-                    alt={item + 'logo'}
-                    fill
-                    style={{
-                      objectFit: 'contain',
-                      objectPosition: 'center',
-                      transform: 'scale(1.5)',
-                    }}
-                  />
-                </div>
-              ))}
-            </div>
+        </div>
+        <div className="relative mt-3 md:mt-6 flex flex-col items-center w-full bg-foreground overflow-hidden">
+          <p className="text-sm md:text-lg font-semibold text-border pt-6">
+            Trusted by Leading Businesses Worldwide
+          </p>
+          <div className="mt-2 w-[115%] flex items-center justify-between">
+            {[1, 2, 3, 4, 5].map((item) => (
+              <div
+                className="relative min-h-[75px] min-w-[60px] md:min-h-[150px] md:min-w-[200px] w-full"
+                key={item}
+              >
+                <Image
+                  src={'/assets/logos/' + item + '.png'}
+                  alt={item + 'logo'}
+                  fill
+                  style={{
+                    objectFit: 'contain',
+                    objectPosition: 'center',
+                    transform: 'scale(1.5)',
+                  }}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -105,10 +105,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="max-w-screen-lg mx-auto grid grid-cols-2 md:flex items-center justify-between mt-12">
+        <div className="max-w-screen-lg mx-auto grid grid-cols-2 place-items-center lg:flex items-center justify-between mt-12">
           {featuresTiles.map((tile) => (
             <div
-              className="relative flex flex-col items-center rounded-[40px] mb-4 md:mb-0 justify-center h-[40vw] md:h-[200px] drop-shadow-custom aspect-square bg-gradient-to-br from-background via-foreground to-foreground"
+              className="relative flex flex-col items-center rounded-[40px] mb-4 lg:mb-0 justify-center h-[40vw] md:h-[200px] drop-shadow-custom aspect-square bg-gradient-to-br from-background via-foreground to-foreground"
               key={tile.src}
             >
               <div className="relative min-h-[60px] aspect-square mb-6">

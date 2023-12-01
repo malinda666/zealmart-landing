@@ -11,8 +11,8 @@ import Image from 'next/image'
 export default function Features() {
   return (
     <>
-      <section className="relative mx-auto container max-w-screen-lg grid grid-cols-1 md:grid-cols-7 px-0">
-        <div className="flex flex-col items-center md:items-start md:justify-start md:col-span-4 px-4 md:px-0">
+      <section className="relative px-4 mx-auto container max-w-screen-lg grid grid-cols-1 md:grid-cols-7 place-items-center lg:px-0 !min-h-max">
+        <div className="flex flex-col items-center md:items-start md:justify-start md:col-span-4 px-4 lg:px-0">
           <h4 className="text-3xl font-semibold mb-8 mt-8 md:mt-36 text-center md:text-start">
             Unlocking Business Success: Explore the Power of Our Comprehensive
             Feature Set
@@ -31,7 +31,7 @@ export default function Features() {
             <Button>Try Zealmart Free</Button>
           </div>
         </div>
-        <div className="relative flex md:col-span-3 aspect-[4/6]">
+        <div className="relative flex justify-end  md:col-span-2 lg:col-span-3 w-full aspect-[4/6]">
           <Image
             src="/assets/svg/features-banner.svg"
             fill
@@ -39,12 +39,12 @@ export default function Features() {
           />
         </div>
       </section>
-      <section className="">
+      <section className="mt-8 lg:mt-0">
         <Title title={['Zealmart', 'Features']} size="big" align="center" />
         <div className="my-8 md:my-16 grid grid-cols-1 md:grid-cols-3 gap-2">
           {featuresCardData.map((card, i) => (
             <div
-              className="w-full aspect-square bg-foreground flex flex-col items-center justify-between p-6 rounded-3xl"
+              className="w-full h-full lg:aspect-square bg-foreground flex flex-col items-center justify-between p-6 rounded-3xl"
               key={i}
             >
               <div className="text-xl font-semibold">{card.title}</div>
