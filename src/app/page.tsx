@@ -1,6 +1,7 @@
 import Footer from '@/components/layout/Footer'
 import ContactCard from '@/components/modules/ContactCard'
 import FAQAccordion from '@/components/modules/FAQAccordion'
+import LogoMarquee from '@/components/modules/LogoMarquee'
 import TestimonialSlider from '@/components/modules/TestimonialSlider'
 import { Button } from '@/components/ui/Button'
 import { testimonialSliderData } from '@/data/testimonialSliderData'
@@ -57,25 +58,7 @@ export default function Home() {
           <p className="text-sm md:text-lg font-semibold text-border pt-6">
             Trusted by Leading Businesses Worldwide
           </p>
-          <div className="mt-2 w-[115%] flex items-center justify-between">
-            {[1, 2, 3, 4, 5].map((item) => (
-              <div
-                className="relative min-h-[75px] min-w-[60px] md:min-h-[150px] md:min-w-[200px] w-full"
-                key={item}
-              >
-                <Image
-                  src={'/assets/logos/' + item + '.png'}
-                  alt={item + 'logo'}
-                  fill
-                  style={{
-                    objectFit: 'contain',
-                    objectPosition: 'center',
-                    transform: 'scale(1.5)',
-                  }}
-                />
-              </div>
-            ))}
-          </div>
+          <LogoMarquee />
         </div>
       </div>
 
