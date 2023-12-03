@@ -28,10 +28,10 @@ const LogoMarquee = () => {
         // animate="animate"
         className="w-full flex items-center justify-evenly"
       >
-        {logoCloud.map((item) => (
+        {logoCloud.map((item, i) => (
           <div
             className="relative opacity-50 hover:opacity-100 transition-opacity duration-300 ease-out min-h-[75px] min-w-[60px] md:min-h-[150px] md:min-w-[270px] w-full"
-            key={item}
+            key={i}
           >
             <Image
               src={'/assets/logos/' + item + '.svg'}

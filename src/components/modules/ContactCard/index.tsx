@@ -4,7 +4,7 @@ import React from 'react'
 const ContactCard = () => {
   return (
     <section className="!min-h-max">
-      <div className="bg-foreground rounded-3xl py-6 px-10 my-8">
+      <div className="bg-foreground rounded-3xl py-6 px-5 md:px-10 my-8">
         <h1 className="mt-4 md:mt-16 text-3xl md:text-5xl font-bold text-center">
           Need a Custom Plan That Suits Your Business?
         </h1>

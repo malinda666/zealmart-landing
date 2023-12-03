@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative w-full mx-auto min-h-max xl:min-h-[calc(100vh-95px)] flex flex-col justify-between">
+      <div className="relative w-full mx-auto min-h-max flex flex-col justify-between">
         <div className="flex max-w-screen-lg mx-auto flex-col items-center justify-center md:px-8">
           <div className="relative w-[120px] min-h-[24px] h-max mt-12">
             <Image src="/assets/svg/hero.svg" fill alt="HeroShape" />
@@ -42,7 +42,7 @@ export default function Home() {
           <h1 className="mt-4 md:mt-12 text-3xl md:text-5xl font-bold text-center">
             Simplify, Secure and Scale Your Business Operations with Confidence
           </h1>
-          <p className="mt-3 md:mt-6 text-sm text-center text-border">
+          <p className="mt-3 md:mt-6 text-sm text-center text-border px-4 md:px-0">
             Discover a modern, comprehensive approach to business management.
             Our system provides a suite of powerful tools designed to simplify
             your operations, enhance security, and pave the way for scalable
@@ -54,7 +54,7 @@ export default function Home() {
             <Button>Learn More</Button>
           </div>
         </div>
-        <div className="relative mt-3 md:mt-6 flex flex-col items-center w-full bg-foreground overflow-hidden">
+        <div className="relative mt-8 md:mt-16 xl:mt-24 2xl:mt-28 flex flex-col items-center w-full bg-foreground overflow-hidden">
           <p className="text-sm md:text-lg font-semibold text-border pt-6">
             Trusted by Leading Businesses Worldwide
           </p>
@@ -64,7 +64,7 @@ export default function Home() {
 
       {/* Features Section */}
       <section className="pt-16">
-        <div className="p-10 rounded-[40px] bg-foreground grid grid-cols-1 md:grid-cols-2 max-w-screen-lg mx-auto bg-radial-gradient">
+        <div className="p-5 md:p-10 rounded-[40px] bg-foreground grid grid-cols-1 md:grid-cols-2 max-w-screen-lg mx-auto bg-radial-gradient">
           <div className="flex flex-col items-start justify-center gap-6 col-span-1 ">
             <h2 className="text-3xl font-semibold text-center md:text-start">
               Enhance Shop Management <br />
@@ -88,16 +88,16 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="max-w-screen-lg mx-auto grid grid-cols-2 place-items-center lg:flex items-center justify-between mt-12">
+        <div className="max-w-screen-lg mx-auto grid grid-cols-2 place-items-center lg:flex gap-4 mb-8 items-center justify-between mt-12">
           {featuresTiles.map((tile) => (
             <div
-              className="relative flex flex-col items-center rounded-[40px] mb-4 lg:mb-0 justify-center h-[40vw] md:h-[200px] drop-shadow-custom aspect-square bg-gradient-to-br from-background via-foreground to-foreground"
+              className="relative flex flex-col items-center rounded-[40px] justify-center h-[40vw] md:h-[200px] drop-shadow-custom aspect-square bg-gradient-to-br from-background via-foreground to-foreground"
               key={tile.src}
             >
-              <div className="relative min-h-[60px] aspect-square mb-6">
+              <div className="relative min-h-[40px] md:min-h-[60px] aspect-square mb-4 md:mb-6">
                 <Image src={tile.src} fill alt={tile.title1} />
               </div>
-              <div className="px-6 text-center text-sm">
+              <div className="px-4 md:px-6 text-center text-xs md:text-sm">
                 <span>{tile.title1}</span>
                 <span className="text-primary"> {tile.title2}</span>
               </div>
@@ -107,7 +107,7 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="relative p-10 rounded-[40px] bg-foreground grid grid-cols-1 md:grid-cols-2 max-w-screen-lg mx-auto bg-radial-gradient">
+        <div className="relative p-5 md:p-10 rounded-[40px] bg-foreground grid grid-cols-1 md:grid-cols-2 max-w-screen-lg mx-auto bg-radial-gradient">
           <div className="flex flex-col items-start justify-center gap-6 col-span-1 ">
             <h2 className="text-3xl font-semibold text-center md:text-start">
               Manage Employees <br />
@@ -134,20 +134,20 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="absolute left-[-45px] bottom-8 w-full aspect-[6/4] max-w-[90px]">
+          <div className="absolute left-[-25px] md:left-[-45px] bottom-8 w-full aspect-[6/4] max-w-[50px] md:max-w-[90px]">
             <Image src="/assets/svg/triangle-deco.svg" fill alt="features" />
           </div>
-          <div className="absolute z-[-1] left-[-45px] bottom-8 w-full aspect-[6/4] max-w-[90px]">
+          <div className="absolute z-[-1] left-[-25px] md:left-[-45px] bottom-8 w-full aspect-[6/4] max-w-[50px] md:max-w-[90px]">
             <Image src="/assets/svg/triangle-deco-2.svg" fill alt="features" />
           </div>
-          <div className="absolute right-[-45px] top-8 w-full aspect-[6/4] max-w-[90px]">
+          <div className="absolute right-[-25px] md:right-[-45px] top-8 w-full aspect-[6/4] max-w-[50px] md:max-w-[90px]">
             <Image src="/assets/svg/triangle-deco.svg" fill alt="features" />
           </div>
-          <div className="absolute z-[-1] right-[-45px] top-8 w-full aspect-[6/4] max-w-[90px]">
+          <div className="absolute z-[-1] right-[-25px] md:right-[-45px] top-8 w-full aspect-[6/4] max-w-[50px] md:max-w-[90px]">
             <Image src="/assets/svg/triangle-deco-2.svg" fill alt="features" />
           </div>
         </div>
-        <div className="relative p-10 rounded-[40px] bg-foreground grid grid-cols-1 md:grid-cols-2 max-w-screen-lg mx-auto bg-radial-gradient mt-16">
+        <div className="relative p-5 md:p-10 rounded-[40px] bg-foreground grid grid-cols-1 md:grid-cols-2 max-w-screen-lg mx-auto bg-radial-gradient mt-16">
           <div className="col-span-1 relative w-full h-full ">
             <div className="aspect-[6/4]">
               <Image src="/assets/svg/stay-connected.svg" fill alt="features" />
@@ -170,16 +170,16 @@ export default function Home() {
               surprise you – stay connected and in control with our system.`}
             </p>
           </div>
-          <div className="absolute right-[-60px] bottom-8 w-full aspect-[6/4] max-w-[120px]">
+          <div className="absolute right-[-40px] md:right-[-60px] bottom-8 w-full aspect-[6/4] max-w-[80px] md:max-w-[120px]">
             <Image src="/assets/svg/circle-deco.svg" fill alt="features" />
           </div>
-          <div className="absolute z-[-1] right-[-60px] bottom-8 w-full aspect-[6/4] max-w-[120px]">
+          <div className="absolute z-[-1] right-[-40px] md:right-[-60px] bottom-8 w-full aspect-[6/4] max-w-[80px] md:max-w-[120px]">
             <Image src="/assets/svg/circle-deco-2.svg" fill alt="features" />
           </div>
-          <div className="absolute left-[-60px] top-8 w-full aspect-[6/4] max-w-[120px]">
+          <div className="absolute left-[-40px] md:left-[-60px] top-8 w-full aspect-[6/4] max-w-[80px] md:max-w-[120px]">
             <Image src="/assets/svg/circle-deco.svg" fill alt="features" />
           </div>
-          <div className="absolute z-[-1] left-[-60px] top-8 w-full aspect-[6/4] max-w-[120px]">
+          <div className="absolute z-[-1] left-[-40px] md:left-[-60px] top-8 w-full aspect-[6/4] max-w-[80px] md:max-w-[120px]">
             <Image src="/assets/svg/circle-deco-2.svg" fill alt="features" />
           </div>
         </div>

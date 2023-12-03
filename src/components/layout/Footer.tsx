@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="relative w-full bg-foreground mt-16">
       <div className="relative py-6">
         <div className="max-w-screen-lg container mx-auto py-8 flex flex-col md:flex-row items-start justify-center md:items-center md:justify-between">
-          <h3 className="text-3xl font-semibold mb-2 md:mb-0">
+          <h3 className="text-xl md:text-3xl font-semibold mb-4 md:mb-0">
             Ready to Transform Your Business? <br />
             Take the First Step Today!
           </h3>
@@ -37,7 +37,7 @@ const Footer = () => {
         <div className="max-w-screen-lg container mx-auto py-8 flex flex-col items-start justify-between">
           {footerLinks.map((item, i) => (
             <div
-              className="flex flex-col md:flex-row w-full md:w-max gap-2 md:gap-8 items-center justify-start"
+              className="flex flex-col md:flex-row w-full md:w-max gap-2 md:gap-8 items-center justify-start mb-4 md:mb-0"
               key={i}
             >
               <h4 className="text-lg font-semibold text-center md:text-start w-full md:min-w-[100px]">
