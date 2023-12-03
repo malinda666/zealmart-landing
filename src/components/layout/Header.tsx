@@ -1,6 +1,8 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useMemo } from 'react'
 import { Separator } from '../ui/Separator'
 import { Button } from '../ui/Button'
 import { Menu } from 'lucide-react'
@@ -12,6 +14,8 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '../ui/Sheet'
+import { usePathname, useRouter } from 'next/navigation'
+import { cn } from '@/lib/utils'
 
 const menuItems = [
   {
@@ -33,6 +37,8 @@ const menuItems = [
 ]
 
 const Header = () => {
+  const pathname = usePathname()
+
   return (
     <header className="sticky z-50 w-full px-4 lg:px-8 py-2 md:py-4 bg-foreground">
       <div className="max-w-screen-lg mx-auto flex items-center justify-between">
@@ -50,7 +56,14 @@ const Header = () => {
         <div className="hidden md:flex items-center justify-center gap-4">
           {menuItems.map((item) => (
             <Link href={item.path} key={item.name} className="">
-              <span className="text-secondary hover:text-primary transition-colors duration-150 text-sm whitespace-nowrap">
+              <span
+                className={cn(
+                  'text-secondary hover:text-primary transition-colors duration-150 text-sm whitespace-nowrap',
+                  pathname.toLowerCase() === item.path.toLowerCase()
+                    ? 'underline'
+                    : ''
+                )}
+              >
                 {item.name}
               </span>
             </Link>

@@ -13,7 +13,7 @@ export default function Features() {
     <>
       <section className="relative px-4 mx-auto container max-w-screen-lg grid grid-cols-1 md:grid-cols-7 place-items-center lg:px-0 !min-h-max">
         <div className="flex flex-col items-center md:items-start md:justify-start md:col-span-4 px-4 lg:px-0">
-          <h4 className="text-3xl font-semibold mb-8 mt-8 md:mt-36 text-center md:text-start">
+          <h4 className="text-3xl font-semibold mb-8 mt-8 md:mt-16 text-center md:text-start">
             Unlocking Business Success: Explore the Power of Our Comprehensive
             Feature Set
           </h4>
@@ -31,7 +31,7 @@ export default function Features() {
             <Button>Try Zealmart Free</Button>
           </div>
         </div>
-        <div className="relative flex justify-end  md:col-span-2 lg:col-span-3 w-full aspect-[4/6]">
+        <div className="relative mt-8 md:mt-16 flex justify-end md:col-span-2 lg:col-span-3 w-full aspect-[4/4]">
           <Image
             src="/assets/svg/features-banner.svg"
             fill
@@ -39,7 +39,7 @@ export default function Features() {
           />
         </div>
       </section>
-      <section className="mt-8 lg:mt-0">
+      <section className="mt-8 lg:mt-10">
         <Title title={['Zealmart', 'Features']} size="big" align="center" />
         <div className="my-8 md:my-16 grid grid-cols-1 md:grid-cols-3 gap-2">
           {featuresCardData.map((card, i) => (
@@ -106,7 +106,7 @@ export default function Features() {
             </p>
           </div>
           <div className="col-span-1 relative w-full h-full ">
-            <div className="aspect-[6/4]">
+            <div className="aspect-[6/4] hover:animate-pulse">
               <Image
                 src="/assets/images/features-banner-2.png"
                 fill

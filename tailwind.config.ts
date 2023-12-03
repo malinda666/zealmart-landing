@@ -78,7 +78,7 @@ const config: Config = {
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
       dropShadow: {
-        custom: '6px 9px 13px var(--foreground)',
+        custom: '3px 6px 8px var(--foreground)',
       },
     },
   },
